@@ -1,0 +1,16 @@
+[production]
+
+maxime3     ansible_host=172.16.90.3
+maxime4     ansible_host=172.16.90.4
+
+  
+[group1]
+maxime3
+
+[group2]
+maxime4
+
+[all:vars]
+ansible_connection=ssh
+; ansible_user=maxime
+; ansible_ssh_pass=maxime
